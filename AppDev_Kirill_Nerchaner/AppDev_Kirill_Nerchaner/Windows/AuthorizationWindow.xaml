@@ -1,0 +1,29 @@
+﻿<Window x:Class="AppDev_Kirill_Nerchaner.Windows.AuthorizationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppDev_Kirill_Nerchaner.Windows"
+        mc:Ignorable="d"
+        Title="AuthorizationWindow" Height="250" Width="250" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <WrapPanel HorizontalAlignment="Center"  Margin="0 0 0 20">
+                <TextBlock Text="Username" Margin="0 0 10 0" />
+                <TextBox x:Name="TBLogin" Width="100" BorderBrush="Black" BorderThickness="1"/>
+            </WrapPanel>
+            <WrapPanel HorizontalAlignment="Center" Margin="0 0 0 20">
+                <TextBlock Text="Password" Margin="0 0 10 0"/>
+                <PasswordBox x:Name="PBPassword" Width="100" BorderBrush="Black" BorderThickness="1"/>
+            </WrapPanel>
+            <WrapPanel  HorizontalAlignment="Center" Margin="70 0 0 25">
+                <CheckBox x:Name="CBRemember" Margin="0 0 10 0"/>
+                <TextBlock Text="Remember me"/>
+            </WrapPanel>
+            <WrapPanel HorizontalAlignment="Center">
+                <Button x:Name="BOk" Content="Ok" Background="LightSkyBlue" Margin="0 0 30 0" Width="80" Click="BOk_Click"/>
+                <Button x:Name="BCancel" Content="Canel" Background="White" Width="80" Click="BCancel_Click"/>
+            </WrapPanel>
+        </StackPanel>
+    </Grid>
+</Window>
